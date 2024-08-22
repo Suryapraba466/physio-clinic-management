@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Form Title</title>
+
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="in-patient-billing.css">
+</head>
+<body>
+
+<div class="in-patient-billing-container">
+    <form action="" class="form-in-patient-billing-container">
+        <div class="in-patient-billing-row">
+            <div class="in-patient-billing-col">
+                <h3 class="in-patient-billing-title">Billing Details</h3>
+                <div class="in-patient-billing-inputBox mobile-number">
+                    <span>Mobile Number</span>
+                    <input type="tel" placeholder="987-654-3210" pattern="[0-9]{10}" class="in-patient-billing-input mobile-input">
+                    <input type="button" value="Search" class="in-patient-billing-btn-search"/>
+                </div>
+                <p class="in-patient-billing-patient-details"><span class="in-patient-billing-patient-name">RamRaj</span> <span class="in-patient-billing-patient-status">In-Patient</span></p>
+                <div class="in-patient-billing-inputBox">
+                    <span>Room Number</span>
+                    <input type="text" placeholder="21" class="input">
+                </div>
+                <div class="in-patient-billing-inputBox">
+                    <span>Admission Date</span>
+                    <input type="date" class="input">
+                </div>
+                <div class="in-patient-billing-inputBox">
+                    <span>Discharge Date</span>
+                    <input type="date" class="input">
+                </div>
+                <div class="flex">
+                    <div class="in-patient-billing-inputBox">
+                        <span>Total Days</span>
+                        <input type="text" placeholder="35" class="input">
+                    </div>
+                </div>
+            </div>
+            <div class="in-patient-billing-col">
+                <h3 class="in-patient-billing-title">Amount Details</h3>
+                <div class="in-patient-billing-inputBox">
+                    <span>Payment Option</span>
+                    <div class="in-patient-billing-dropdown">
+                        <div class="in-patient-billing-input-box">
+                           
+                            <ul class="in-patient-billing-nav">
+                                <li class="in-patient-billing-button-dropdown">
+                                    <select class="in-patient-billing-dropdown-menu" name="paymentMode" value={patient.paymentMode} onChange={handleInputChange}>
+                                        <option class="in-patient-billing-dropdown-toggle value="">Select Payment Mode</option>
+                                        <option class="dropdown-item" value="Cash">Cash</option>
+                                        <option class="dropdown-item" value="UPI">UPI</option>
+                                        <option class="dropdown-item" value="Credit Card">Credit Card</option>
+                                        <option class="dropdown-item" value="Debit Card">Debit Card</option>
+                                        <option class="dropdown-item" value="Net Banking">Net Banking</option>
+                                    </select>
+                                  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="in-patient-billing-flex-in-billing">
+                    <div class="in-patient-billing-inputBox">
+                        <span>Visiting Bill</span>
+                        <input type="text" placeholder="250" class="input">
+                    </div>
+                    <div class="in-patient-billing-inputBox">
+                        <span>Physio Bill</span>
+                        <input type="text" placeholder="110" class="input">
+                    </div>
+                </div>
+                <div class="in-patient-billing-flex-in-billing">
+                    <div class="in-patient-billing-inputBox">
+                        <span>Nursing Bill</span>
+                        <input type="text" placeholder="110" class="input">
+                    </div>
+                    <div class="in-patient-billing-inputBox">
+                        <span>Other Expenses</span>
+                        <input type="text" placeholder="20" min="1900" max="2100" class="input">
+                    </div>
+                </div>
+                <div class="in-patient-billing-inputBox">
+                    <span>Amount Per Day</span>
+                    <input type="text" placeholder="1234" class="input">
+                </div>
+                <div class="in-patient-billing-total-amount-check">
+                    <h2>Total Amount</h4>
+                    <div class="in-patient-billing-total-amount-display"><h4>4500&#8377;</h4></div>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Proceed to Checkout" class="in-patient-billing-submit-btn">
+    </form>
+</div>
+
+</body>
+</html>
+
+
+

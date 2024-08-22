@@ -1,0 +1,237 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+.out-patient-billing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.out-patient-billing-btn-search {
+  position: absolute;
+  right: 0%;
+  display: inline-block;
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 0px 5px 5px 0px;
+  color: white;
+}
+.out-patient-billing-btn-search:hover {
+  background-color: #0056b3;
+}
+.mobile-number {
+  max-width: 100%;
+  position: relative;
+}
+
+.out-patient-billing-form-container {
+  margin-top: 8vmax;
+  height: fit-content;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(234, 232, 232);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.out-patient-billing-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.out-patient-billing-col {
+  flex: 1;
+  padding: 0 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.out-patient-billing-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: rgb(0, 122, 255);
+}
+
+.out-patient-billing-input-box {
+  margin-bottom: 10px;
+}
+
+.out-patient-billing-input-box span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+
+.out-patient-billing-input-box input[type="number"],
+.out-patient-billing-input-box input[type="tel"],
+.out-patient-billing-input-box input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.out-patient-billing-input-box input[type="date"] {
+  color: rgb(160, 160, 160);
+  font-weight: 600;
+}
+.out-patient-billing-input-box input[type="text"]:focus,
+.out-patient-billing-input-box input[type="number"]:focus,
+.out-patient-billing-input-box input[type="tel"]:focus,
+.out-patient-billing-input-box input[type="date"]:focus {
+  border-color: #4a9dec;
+  outline: none;
+}
+
+.out-patient-billing-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.out-patient-billing-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.out-patient-billing-input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 1px solid rgb(179, 178, 178);
+  border-radius: 8px;
+  outline: none;
+  background-color: white;
+  color: #0d0c22;
+  transition: 0.4s ease;
+}
+
+.out-patient-billing-input::placeholder {
+  color: #9e9ea7;
+}
+
+.out-patient-billing-input:focus {
+  outline: none;
+  border-color: rgba(0, 214, 247, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 202, 247, 0.1);
+}
+
+.out-patient-billing-nav {
+  width: 100%;
+  display: block;
+  font: 16px Helvetica, Tahoma, serif;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #b4b4b4;
+  margin-bottom: 10px;
+}
+
+.out-patient-billing-nav li {
+  width: 100%;
+  border-radius: 5px;
+  display: inline-block;
+  list-style: none;
+}
+
+.out-patient-billing-nav .out-patient-billing-button-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.out-patient-billing-nav .out-patient-billing-button-dropdown a {
+  width: 100%;
+  display: block;
+  color: gray;
+  padding: 13px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(179, 178, 178);
+  text-decoration: none;
+}
+
+.out-patient-billing-nav
+  .out-patient-billing-button-dropdown
+  .out-patient-billing-dropdown-toggle
+  span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #999;
+  transition: 0.2s ease;
+}
+
+.out-patient-billing-nav
+  .out-patient-billing-button-dropdown
+  .out-patient-billing-dropdown-menu {
+  border-radius: 5px;
+  outline: 1px solid rgb(200, 200, 200);
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+  background-color: white;
+}
+
+.out-patient-billing-dropdown-menu.active {
+  display: block;
+}
+
+.out-patient-billing-dropdown-menu a {
+  border: none !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+  display: block;
+  color: gray;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.out-patient-billing-dropdown-menu a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.out-patient-billing-nav
+  .out-patient-billing-button-dropdown
+  .out-patient-billing-dropdown-menu
+  a {
+  width: 150px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

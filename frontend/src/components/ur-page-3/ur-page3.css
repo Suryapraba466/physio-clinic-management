@@ -1,0 +1,134 @@
+@import "compass/css3";
+
+
+.ur-page3-container {
+    padding: 3% 3%;
+    display: flex;
+    gap: 1%;
+  }
+  
+  .ur-page3-left-container {
+    flex: 1;
+    border: 1px solid #000; /* Border for left container */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    border: 1px solid rgb(200, 200, 200);
+  }
+  
+  .ur-page3-right-container {
+    flex: 1;
+    border: 1px solid #000; /* Border for right container */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    border: 1px solid rgb(200, 200, 200);
+  }
+table {
+    width: 97%;
+    font-family: 'Arial';
+    margin: 10px auto;
+    border-collapse: collapse;
+  
+    border-bottom: 2px solid #007bff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+        0px 10px 20px rgba(0, 0, 0, 0.05),
+        0px 20px 20px rgba(0, 0, 0, 0.05),
+        0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.custom-input {
+    width: 40px; /* Adjust the width as needed */
+    padding: 2px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  } 
+
+  .ur-page3-left-container-title,
+  .ur-page3-right-container-tb1-title,
+  .ur-page3-right-container-tb2-title {
+    margin-left: 12px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
+
+
+
+.ur-page3-next-btn {
+  margin-top: -2vh;
+    margin-right: 45px;
+    position: relative;
+    width: 19rem;
+    height: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    float: right;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color:#007bff;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .ur-page3-next-btn:hover {
+   
+    border-color: #fff9;
+  }
+  
+  .ur-page3-next-btn:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .ur-page3-next-btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  .ur-page3-next-btn img{
+    width: 20px;
+    height: 20px;
+    color: #333;
+  }

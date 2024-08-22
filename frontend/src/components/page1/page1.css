@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+.update-record-header {
+  
+    margin: 6vmin 0% 0vmin 0%;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    color: #fff;
+    display: flex;
+}
+
+.landing-page-update-record{
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  gap: 20px;
+}
+
+.update-record-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px -10px;
+}
+
+.update-record-col {
+  flex: 1;
+  padding: 0px 10px 0px 10px;
+ 
+}
+
+
+/* search bar */
+
+.update-record-search-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 200, 200);
+    
+  }
+  
+  .update-record-search-bar input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+   border: none;
+    background-color: transparent;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(69 90 100);
+    outline: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .update-record-patient-details{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+
+  }
+  
+  .update-record-patient-details{
+    width: fit-content;
+    height: fit-content;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .update-record-patient-details{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+  
+    font-style: normal;
+  }
+
+  .update-record-invite-btn {
+    position: absolute;
+    width: 80px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: 10;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: .6s ease;
+  }
+  
+ 
+  
+  .input-container input:placeholder-shown ~ .invite-btn {
+    pointer-events: none;
+    background-color: #007bff;
+    border-radius: 8px;
+    
+  }
+
+.search-input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    padding: 5px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+  
+
+
+.update-record-checkbox-container{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.update-record-checkbox-group {
+  border-radius: 8px;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2% ;
+  
+    
+   
+    
+}
+.update-record-pain-level{
+  align-items: center;
+}
+.update-record-checkbox-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+/* inpiut field */
+
+.update-record-patient-title{
+  color:#007bff;
+}
+:root {
+  --input-color: #99A3BA;
+  --input-border: #CDD9ED;
+  --input-background: #fff;
+  --input-placeholder: #CBD1DC;
+  --input-border-focus: #275EFE;
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+}
+
+.update-record-form-field {
+
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border .3s ease;
+  
+}
+
+.update-record-form-field::placeholder {
+  color: var(--input-placeholder);
+}
+
+.update-record-form-field:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.update-record-form-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 2% 0%;
+  
+  
+}
+
+.update-record-form-group > span,
+.update-record-form-group .update-record-form-field {
+  white-space: nowrap;
+  display: block;
+  font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+ 
+}
+
+.update-record-form-group > span:not(:first-child):not(:last-child),
+.update-record-form-group .update-record-form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.update-record-form-group > span:first-child,
+.update-record-form-group .update-record-form-field:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.update-record-form-group > span:last-child,
+.update-record-form-group .update-record-form-field:last-child {
+  border-radius: 6px;
+}
+
+.update-record-form-group > span:not(:first-child) {
+  margin-left: -1px;
+}
+
+.update-record-form-group .form-field {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.update-record-form-group > span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--group-color);
+  background: var(--group-background);
+  border: 1px solid var(--group-border);
+  transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.update-record-form-group:focus-within > span {
+  color: var(--group-color-focus);
+  background:#007bff;
+  border-color: var(--group-border-focus);
+}
+
+
+
+.update-record-form-group-factors {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 2% 0%;
+  
+  
+}
+
+.update-record-form-group-factors > span,
+.update-record-form-group-factors .update-record-form-field {
+  white-space: nowrap;
+  display: block;
+  font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+ 
+}
+
+.update-record-form-group-factors > span:not(:first-child):not(:last-child),
+.update-record-form-group-factors .update-record-form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.update-record-form-group-factors > span:first-child,
+.update-record-form-group-factors .update-record-form-field:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.update-record-form-group-factors > span:last-child,
+.update-record-form-group-factors .update-record-form-field:last-child {
+  border-radius: 6px;
+}
+
+.update-record-form-group-factors > span:not(:first-child) {
+  margin-left: -1px;
+}
+
+.update-record-form-group-factors .form-field {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.update-record-form-group-factors > span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+    line-height: 25px;
+  color: var(--group-color);
+  background: var(--group-background);
+  border: 1px solid var(--group-border);
+  transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.update-record-form-group-factors:focus-within > span {
+  color: var(--group-color-focus);
+  background:#007bff;
+  border-color: var(--group-border-focus);
+}
+
+
+.update-record-col span{
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+/* end input */
+
+.update-record-checkbox-wrapper-46{
+  margin: 4% 0%;
+  
+  
+}
+
+.update-record-checkbox-wrapper-46 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx span {
+  display: inline-block;
+  font-size:clamp(12px, calc(0.5rem + 0.5vw),1rem);
+
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx span:first-child {
+  position: relative;
+  width: 20px;
+  height: 20px;
+ 
+  
+  border-radius: 5px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 2px solid #9098a9;
+  transition: all 0.2s ease;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx span:first-child svg {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #007bff;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx span:last-child {
+  padding-left: 8px;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-cbx:hover span:first-child {
+  border-color: #007bff;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-inp-cbx:checked + .update-record-cbx span:first-child {
+  background: #007bff;
+  border-color: #007bff;
+  animation: wave-46 0.4s ease;
+}
+.update-record-checkbox-wrapper-46 .update-record-inp-cbx:checked + .update-record-cbx span:last-child{
+  color: #007bff;
+}
+.update-record-checkbox-wrapper-46 .update-record-inp-cbx:checked + .update-record-cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.update-record-checkbox-wrapper-46 .update-record-inp-cbx:checked + .update-record-cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.separator
+{
+  font-size: 25px;
+  color: gray;
+}
+
+.update-record-pain-region{
+width: 50%;
+  
+}
+.update-record-pain-region .update-record-col{
+width: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  
+}
+.update-record-pain-region-content 
+{
+   display: flex;
+   justify-content: flex-start;
+   
+   height: 100%;
+ 
+}
+.update-record-pain-region-content .update-record-checkbox-wrapper-46{
+  padding:5% 0% 5% 0%;
+}
+.update-record-pain-region-content .update-record-col .update-record-form-group{
+    margin-bottom: 10%;
+}
+.update-record-pain-region-content .update-record-col .update-record-form-group-factors{
+  width:20vw
+}
+
+.update-record-vital-sign .update-record-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.update-record-vital-sign .update-record-col .update-record-form-field
+{
+  border-radius: 0 6px 6px 0;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(176, 92, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+} 
+.update-record-next-btn {
+  position: relative;
+  width: 19rem;
+  height: 2.5rem;
+  transition: all 0.3s ease-in-out;
+ 
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color:#007bff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.update-record-next-btn:hover {
+ 
+  border-color: #fff9;
+}
+
+
+
+.update-record-next-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.update-record-next-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+  
+.update-record-next-btn img{
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+
+/* tags*/
+
+.update-record-patient-details  .update-record-patient{
+   padding: 5px 30px;
+   border-radius: 50px;
+   font-size: 20px;
+}
+
+.update-record-col {
+  display: flex;
+}
+.update-record-next-btn
+  {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+  }
+
+.thermometer-meter {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  width: 20px; /* Adjust width as needed */
+  height: 100%; /* Adjust height as needed */
+  background: linear-gradient(to top, #ffffff, #0074d9); /* Gradient from white to blue */
+  border: 1px solid #ccc;
+}
+
+.level {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.level:nth-child(1) {
+  bottom: 5%;
+}
+
+.level:nth-child(2) {
+  bottom: 26%;
+}
+
+.level:nth-child(3) {
+  bottom: 48%;
+}
+
+.level:nth-child(4) {
+  bottom: 70%;
+}
+
+.level:nth-child(5) {
+  top: 5%;
+}

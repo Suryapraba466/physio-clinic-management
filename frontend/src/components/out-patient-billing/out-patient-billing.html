@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="out-patient-billing.css" />
+    <link rel="stylesheet" href="in-patient-billing.css" />
+
+
+    <title>Out-Patient-Billing</title>
+  </head>
+
+
+  <body>
+    <div class="out-patient-billing-container">
+      <div class="out-patient-billing-form-container">
+        <div class="out-patient-billing-row">
+          <div class="out-patient-billing-col">
+            <h3 class="out-patient-billing-title">Out-Patient Billing</h3>
+            <div class="out-patient-billing-input-box mobile-number">
+              <span>Mobile Number</span>
+              <input
+                type="tel"
+                placeholder="987-654-3210"
+                pattern="[0-9]{10}"
+                class="out-patient-billing-input mobile-input"
+              />
+              <input
+                type="button"
+                value="Search"
+                class="out-patient-billing-btn-search"
+              />
+            </div>
+            <div class="out-patient-billing-input-box">
+              <span>Admission Date</span>
+              <input type="date" class="out-patient-billing-input" />
+            </div>
+            <div class="out-patient-billing-flex">
+              <div class="out-patient-billing-input-box">
+                <span>Service Name</span>
+                <input
+                  type="text"
+                  placeholder="Nersing"
+                  class="out-patient-billing-input"
+                />
+              </div>
+              <div class="in-patient-billing-inputBox">
+                <span>Payment Option</span>
+                <div class="in-patient-billing-dropdown">
+                    <div class="in-patient-billing-input-box">
+                       
+                        <ul class="in-patient-billing-nav">
+                            <li class="in-patient-billing-button-dropdown">
+                                <select class="in-patient-billing-dropdown-menu" name="paymentMode" value={patient.paymentMode} onChange={handleInputChange}>
+                                    <option class="in-patient-billing-dropdown-toggle" value="">Select Payment Mode</option>
+                                    <option class="dropdown-item" value="Cash">Cash</option>
+                                    <option class="dropdown-item" value="UPI">UPI</option>
+                                    <option class="dropdown-item" value="Credit Card">Credit Card</option>
+                                    <option class="dropdown-item" value="Debit Card">Debit Card</option>
+                                    <option class="dropdown-item" value="Net Banking">Net Banking</option>
+                                </select>
+                              </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+              <div class="out-patient-billing-input-box">
+                <span>Bill Amount</span>
+                <input
+                  type="text"
+                  placeholder="400"
+                  class="out-patient-billing-input"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Create Out-Patient Bill"
+          class="out-patient-billing-submit-btn"
+        />
+      </div>
+    </div>
+
+  </body>
+</html>

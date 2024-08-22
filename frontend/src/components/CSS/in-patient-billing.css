@@ -1,0 +1,838 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.main-container-in-bill{
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.sub-main-container-in-bill{
+  width: 98vw;
+  height: 95vh;
+}
+.in-patient-billing-container {
+
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding:0 1%;
+}
+
+
+.in-patient-billing-btn-search {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  width: 25px;
+ height: auto;
+}
+
+
+
+.mobile-number {
+  max-width: 100%;
+  position: relative;
+  
+}
+.in-patient-billing-input{
+  border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    border-right: 5px solid #eff1fd;
+    border-left: 5px solid #f7f1fb;
+    border-bottom: 5px solid #eff1fd;
+    border-top: 5px solid #f7f1fb;
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+    padding: 5px 10px;
+    min-width:200px;
+    outline: none;
+   
+   
+}
+
+.in-patient-billing-inputBox   .input{
+  background-color: white;
+    border-right: 3px solid #eff1fd;
+    border-left: 3px solid #f7f1fb;
+    border-bottom: 3px solid #eff1fd;
+    border-top: 3px solid #f7f1fb;
+    box-shadow: 0 0 3px rgb(222, 222, 222);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.form-in-patient-billing-container {
+  height: fit-content;
+  width: 100%;
+ max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  background-color: white;
+  border-right: 5px solid #eff1fd;
+  border-left: 5px solid #f7f1fb;
+  border-bottom: 5px solid #eff1fd;
+  border-top: 5px solid #f7f1fb;
+  box-shadow: 0 0 5px rgb(222, 222, 222);
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.in-patient-billing-row {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.in-patient-billing-col {
+  flex: 1;
+
+  padding: 0 10px;
+}
+.in-patient-billing-flex-in-billing .in-patient-billing-inputBox  .input{
+  max-width: 100px;
+}
+
+.in-patient-billing-title {
+  font-size: 24px;
+  color: #007bff;
+ margin: 10px 0;
+}
+
+
+
+.in-patient-billing-inputBox span {
+  color: rgb(52, 52, 52);
+  display: block;
+  font-size: 14px;
+  margin: 2% 0 0;
+ 
+}
+
+
+
+.in-patient-billing-inputBox input[type="number"],
+.in-patient-billing-inputBox input[type="tel"],
+.in-patient-billing-inputBox input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: white;
+  border-right: 3px solid #eff1fd;
+  border-left: 3px solid #f7f1fb;
+  border-bottom: 3px solid #eff1fd;
+  border-top: 3px solid #f7f1fb;
+  box-shadow: 0 0 3px rgb(222, 222, 222);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.in-patient-billing-inputBox input[type="date"] {
+  color: rgb(62, 62, 62);
+  font-weight: 600;
+
+}
+
+
+.in-patient-billing-inputBox input[type="number"]:focus,
+.in-patient-billing-inputBox input[type="tel"]:focus,
+.in-patient-billing-inputBox input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.in-patient-billing-submit-btn {
+  
+  display: inline;
+  margin: 2% 3%  0 0 ;
+  width: 47%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.in-patient-billing-submit-btn:hover {
+  background-color: #0056b3;
+}
+.in-patient-billing-inputBox{
+  display: flex;
+  flex-direction: column;
+}
+/* Placeholder styles */
+::placeholder {
+  color: rgb(52, 52, 52);
+
+}
+
+.in-patient-billing-nav {
+  width: 100%;
+  display: block;
+  font: 16px Helvetica, Tahoma, serif;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #b4b4b4;
+  margin-top: 0.3rem;
+}
+
+.in-patient-billing-nav li {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+}
+
+.in-patient-billing-nav .button-in-patient-billing-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.in-patient-billing-nav .button-in-patient-billing-dropdown .in-patient-billing-dropdown-toggle {
+  border: 1px solid #ccc;
+  color: rgb(52, 52, 52);
+  border-radius: 8px;
+}
+
+.in-patient-billing-nav li a {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: rgb(52, 52, 52);
+
+  background-color: #f9f9f9;
+  padding: 10px 10px;
+  border: 1px solid rgb(234, 232, 232);
+  text-decoration: none;
+}
+
+.in-patient-billing-nav li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 13px;
+  color: rgb(52, 52, 52);
+  position: absolute;
+  right: 2%;
+  transition: 0.2s ease;
+}
+
+.in-patient-billing-flex-in-billing {
+  display:inline-flex;
+  min-width: 400px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 2%  0;
+
+  
+}
+.in-patient-billing-flex-in-billing>*{
+  flex: 1;
+}
+@media (max-width:470px){
+  .in-patient-billing-flex-in-billing{
+    min-width: 200px;
+  }
+}
+
+.in-patient-billing-flex-in-billing .in-patient-billing-inputBox {
+  
+}
+
+.in-patient-billing-nav li .in-patient-billing-dropdown-menu {
+  border-radius: 8px;
+ 
+ 
+  overflow-y: auto;
+  height: 35px;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+  background-color: white;
+  outline: none;
+  color: rgb(52, 52, 52);
+  border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+  border-right: 5px solid #eff1fd;
+  border-left: 5px solid #f7f1fb;
+  border-bottom: 5px solid #eff1fd;
+  border-top: 5px solid #f7f1fb;
+    padding: 1% 2%;
+
+}
+
+
+
+.in-patient-billing-dropdown-menu .dropdown-item {
+  border: none !important;
+  width: 100% !important;
+  display: block;
+  color: rgb(52, 52, 52);
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.in-patient-billing-dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.in-patient-billing-flex-in-billing.con-2{
+  display: flex;
+}
+
+.in-patient-billing-total-amount-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.7rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 7.8rem;
+  padding: 1rem;
+}
+
+.in-patient-billing-total-amount-check h2 {
+  align-self: flex-start;
+  color: #007bff;
+}
+
+.in-patient-billing-total-amount-display {
+  align-self: center;
+  font-size: 50px;
+}
+
+.in-patient-billing-patient-details {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.in-patient-billing-patient-name,
+.in-patient-billing-patient-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #3a3a3a;
+  text-transform: uppercase;
+  font-size: calc(1rem + 0.5vw);
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.in-patient-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: none;
+}
+.in-patient-wrapper .in-patient-box-wrap {
+  width: 70%;
+  height: 70%;
+  margin: calc((100% - 70%) / 2) calc((100% - 70%) / 2);
+  position: relative;
+  transform: rotate(-45deg);
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(135, 0, 0, 0.6);
+  background: linear-gradient(
+    to right,
+    #141562,
+    #486fbc,
+    #eab5a1,
+    #8dd6ff,
+    #4973c9,
+    #d07ca7,
+    #f4915e,
+    #f5919e,
+    #b46f89,
+    #141562,
+    #486fbc
+  );
+  background-position: 0% 50%;
+  background-size: 1000% 1000%;
+  visibility: hidden;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.one {
+  animation: moveGradient 15s infinite, oneMove 3.5s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.two {
+  animation: moveGradient 15s infinite, twoMove 3.5s 0.15s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.three {
+  animation: moveGradient 15s infinite, threeMove 3.5s 0.3s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.four {
+  animation: moveGradient 15s infinite, fourMove 3.5s 0.575s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.five {
+  animation: moveGradient 15s infinite, fiveMove 3.5s 0.725s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.six {
+  animation: moveGradient 15s infinite, sixMove 3.5s 0.875s infinite;
+}
+
+@keyframes moveGradient {
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes oneMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes twoMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes threeMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes fourMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes fiveMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes sixMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+.in-patient-load-wrapp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+}
+
+.in-patient-load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.in-patient-letter-holder {
+  font-family: "Poppins", sans-serif;
+  padding: 16px;
+  font-size: 1px;
+}
+
+.letter {
+  float: left;
+  font-size: 10px;
+  color: #777;
+}
+
+.in-patient-load-6 .letter {
+  background-image: linear-gradient(to right, #2c67f2, #62cff4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-top: 35vh;
+  font-size: 30px;
+  animation-name: loadingF;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+.l-1 {
+  animation-delay: 0.48s;
+}
+.l-2 {
+  animation-delay: 0.6s;
+}
+.l-3 {
+  animation-delay: 0.72s;
+}
+.l-4 {
+  animation-delay: 0.84s;
+}
+.l-5 {
+  animation-delay: 0.96s;
+}
+.l-6 {
+  animation-delay: 1.08s;
+}
+.l-7 {
+  animation-delay: 1.2s;
+}
+
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.toast {
+  position: fixed;
+  top: 8vh;
+  right: 4vw;
+  border-radius: 12px;
+  background: #fff;
+  padding: 5px 10px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  z-index: 10000000000000000;
+}
+
+.toast.toast-active {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .toast-check,
+.toast-content .toast-error-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  background-color: #4070f4;
+  color: #fff;
+  font-size: clamp(10px,calc(0.7rem + 0.5vw),1.5rem);
+  border-radius: 50%;
+}
+
+.toast-content .toast-error-check{
+  background-color: rgb(194, 0, 0);
+}
+
+.toast-content .toast-message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.toast-message .toast-text {
+  text-wrap:wrap;
+  font-size: clamp(10px,calc(0.7rem + 0.5vw),1.5rem);
+  font-weight: 400;
+  color: #666666;
+}
+
+.toast-message .toast-text.toast-text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .toast-close {
+  max-height: 35px;
+  color: #000;
+  position: absolute;
+  top: 15px;
+  /* right: 15px;
+  padding: 5px; */
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .toast-close:hover {
+  opacity: 1;
+}
+
+.toast .toast-progress,
+.toast .toast-error-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+
+}
+
+.toast .toast-progress:before,
+.toast .toast-error-progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+.toast .toast-error-progress:before{
+  background-color: rgb(194, 0, 0);
+}
+
+.toast-progress.toast-active:before,
+.toast-error-progress.toast-active:before {
+  animation: toast-progress 5s linear forwards;
+}
+
+@keyframes toast-progress {
+  100% {
+    right: 100%;
+  }
+}
+/* 
+button {
+  padding: 12px 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: #4070f4;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0e4bf1;
+}
+
+.toast.toast-active ~ button {
+  pointer-events: none;
+} */

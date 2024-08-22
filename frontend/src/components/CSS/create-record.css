@@ -1,0 +1,1187 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+.appointment-super-container{
+  display: flex;
+align-items: center;
+  width: 100%;
+   min-height: 100vh;
+  flex-wrap: wrap; 
+   padding: 60px 2dvh 2dvh;
+
+}
+.appointment-image{
+  min-width: 300px;
+  width: calc(100% - 20%);
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.create-record-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+   min-height: 100vh;
+    flex: 1;
+    padding:60px 5% 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.create-record-container>{
+  flex: 1;
+}
+
+.create-record-container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    flex: 1;
+  
+    flex-wrap: wrap;
+}
+.create-record-container{
+  flex: 1;
+}
+
+.appointment-record-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 100%;
+    flex: 1;
+}
+
+
+.right-img-container{
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.create-record-btn-search {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0px 8px 8px 0px;
+  width: max-content;
+  display: inline-block;
+  padding: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.create-record-btn-search:hover {
+  background-color: #0056b3;
+}
+
+.create-record-form-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+      
+
+  border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    border-right: 10px solid #eff1fd;
+    border-left: 10px solid #f7f1fb;
+    border-bottom: 10px solid #eff1fd;
+    border-top: 10px solid #f7f1fb;
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+    padding: 20px;
+}
+.create-record-form-container-12 {
+
+ 
+  background-color: white;
+      
+
+  border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    border-right: 10px solid #eff1fd;
+    border-left: 10px solid #f7f1fb;
+    border-bottom: 10px solid #eff1fd;
+    border-top: 10px solid #f7f1fb;
+    /* box-shadow: 0 0 10px rgb(222, 222, 222); */
+    padding: 20px;
+    border: none;
+}
+
+.create-record-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+ 
+}
+@media (max-width:340px) {
+  .appointment-image{
+    min-width:200px ;
+  }
+  .create-record-submit-btn{
+    padding: 10px 5px!important;
+  }
+  
+}
+.create-record-col {
+  flex: 1;
+  padding:1% 0%;
+  min-width: 300px;
+}
+
+@media (max-width:700px) {
+  .create-icon{
+    min-width: 300px;
+  }
+  .create-record-form-field-name, .create-record-form-field-lastName, .create-record-form-field-age, .create-record-form-field-mobileNo, .create-record-form-field-occupation, .create-record-form-field-uhid, .create-record-form-field-bloodGroup, .create-record-form-field-height, .create-record-form-field-weight, .create-record-form-field-address, .create-record-form-field-gender{
+    padding: 5px 10px!important;
+  }
+  .create-record-form-group-name>span,
+  .create-record-form-group-age>span,
+  .create-record-form-group-mobileNo>span,
+  .create-record-form-group-occupation>span,
+  .create-record-form-group-uhid>span,
+  .create-record-form-group-bloodGroup>span,
+  .create-record-form-group-height>span,
+  .create-record-form-group-weight>span,
+  .create-record-form-group-address>span,
+  .create-record-form-group-gender>span {
+    padding: 5px 5px!important;
+  }
+  .create-record-form-group-name>span:last-child, .create-record-form-group-name .create-record-form-field-name:last-child, .create-record-form-group-age>span:last-child, .create-record-form-group-age .create-record-form-field-age:last-child, .create-record-form-group-mobileNo>span:last-child, .create-record-form-group-mobileNo .create-record-form-field-mobileNo:last-child, .create-record-form-group-occupation>span:last-child, .create-record-form-group-occupation .create-record-form-field-occupation:last-child, .create-record-form-group-uhid>span:last-child, .create-record-form-group-uhid .create-record-form-field-uhid:last-child, .create-record-form-group-bloodGroup>span:last-child, .create-record-form-group-bloodGroup .create-record-form-field-bloodGroup:last-child, .create-record-form-group-height>span:last-child, .create-record-form-group-height .create-record-form-field-height:last-child, .create-record-form-group-weight>span:last-child, .create-record-form-group-weight .create-record-form-field-weight:last-child, .create-record-form-group-address>span:last-child, .create-record-form-group-address .create-record-form-field-address:last-child, .create-record-form-group-gender>span:last-child, .create-record-form-group-gender .create-record-form-field-gender:last-child{
+    padding: 5px 5px!important;
+  }
+  .create-record-col{
+    padding: 0% 0%;
+  }
+}
+.create-icon{
+  width: 39%;
+
+  height: auto;
+}
+
+.create-record-title {
+  font-size: calc(1rem + 0.5vw);
+  color: black;
+  margin-bottom: 2%;
+  font-weight: bolder;
+}
+
+:root {
+  --input-color: #99A3BA;
+  --input-border: #CDD9ED;
+  --input-background: #fff;
+  --input-placeholder: #CBD1DC;
+  --input-border-focus: #275EFE;
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+}
+
+
+.create-record-form-field-name::placeholder,
+.create-record-form-field-lastName::placeholder,
+.create-record-form-field-age::placeholder,
+.create-record-form-field-mobileNo::placeholder,
+.create-record-form-field-occupation::placeholder,
+.create-record-form-field-uhid::placeholder,
+.create-record-form-field-bloodGroup::placeholder,
+.create-record-form-field-height::placeholder,
+.create-record-form-field-weight::placeholder,
+.create-record-form-field-address::placeholder,
+.create-record-form-field-gender::placeholder {
+  color: var(--input-placeholder);
+}
+
+
+.create-record-form-field-name-abnormal::placeholder,
+.create-record-form-field-lastName-abnormal::placeholder,
+.create-record-form-field-age-abnormal::placeholder,
+.create-record-form-field-mobileNo-abnormal::placeholder,
+.create-record-form-field-occupation-abnormal::placeholder,
+.create-record-form-field-uhid-abnormal::placeholder,
+.create-record-form-field-bloodGroup-abnormal::placeholder,
+.create-record-form-field-height-abnormal::placeholder,
+.create-record-form-field-weight-abnormal::placeholder,
+.create-record-form-field-address-abnormal::placeholder,
+.create-record-form-field-gender-abnormal::placeholder {
+  color: var(--input-placeholder);
+}
+
+
+.create-record-form-field-name:focus,
+.create-record-form-field-lastName:focus,
+.create-record-form-field-age:focus,
+.create-record-form-field-mobileNo:focus,
+.create-record-form-field-occupation:focus,
+.create-record-form-field-uhid:focus,
+.create-record-form-field-bloodGroup:focus,
+.create-record-form-field-height:focus,
+.create-record-form-field-weight:focus,
+.create-record-form-field-address:focus,
+.create-record-form-field-gender:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.create-record-form-field-name-abnormal:focus,
+.create-record-form-field-lastName-abnormal:focus,
+.create-record-form-field-age-abnormal:focus,
+.create-record-form-field-mobileNo-abnormal:focus,
+.create-record-form-field-occupation-abnormal:focus,
+.create-record-form-field-uhid-abnormal:focus,
+.create-record-form-field-bloodGroup-abnormal:focus,
+.create-record-form-field-height-abnormal:focus,
+.create-record-form-field-weight-abnormal:focus,
+.create-record-form-field-address-abnormal:focus,
+.create-record-form-field-gender-abnormal:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+
+.create-record-form-group-name,
+.create-record-form-group-lastName,
+.create-record-form-group-age,
+.create-record-form-group-mobileNo,
+.create-record-form-group-occupation,
+.create-record-form-group-uhid,
+.create-record-form-group-bloodGroup,
+.create-record-form-group-height,
+.create-record-form-group-weight,
+.create-record-form-group-address,
+.create-record-form-group-gender {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 5px 0;
+
+}
+
+.create-record-form-group-name-abnormal,
+.create-record-form-group-lastName-abnormal,
+.create-record-form-group-age-abnormal,
+.create-record-form-group-mobileNo-abnormal,
+.create-record-form-group-occupation-abnormal,
+.create-record-form-group-uhid-abnormal,
+.create-record-form-group-bloodGroup-abnormal,
+.create-record-form-group-height-abnormal,
+.create-record-form-group-weight-abnormal,
+.create-record-form-group-address-abnormal,
+.create-record-form-group-gender-abnormal {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+
+
+}
+
+.create-record-form-group-name>span,
+.create-record-form-group-name .create-record-form-field-name,
+.create-record-form-group-lastName>span,
+.create-record-form-group-lastName .create-record-form-field-lastName,
+.create-record-form-group-age>span,
+.create-record-form-group-age .create-record-form-field-age,
+.create-record-form-group-mobileNo>span,
+.create-record-form-group-mobileNo .create-record-form-field-mobileNo,
+.create-record-form-group-occupation>span,
+.create-record-form-group-occupation .create-record-form-field-occupation,
+.create-record-form-group-uhid>span,
+.create-record-form-group-uhid .create-record-form-field-uhid,
+.create-record-form-group-bloodGroup>span,
+.create-record-form-group-bloodGroup .create-record-form-field-bloodGroup,
+.create-record-form-group-height>span,
+.create-record-form-group-height .create-record-form-field-height,
+.create-record-form-group-weight>span,
+.create-record-form-group-weight .create-record-form-field-weight,
+.create-record-form-group-address>span,
+.create-record-form-group-address .create-record-form-field-address,
+.create-record-form-group-gender>span,
+.create-record-form-group-gender .create-record-form-field-gender {
+  white-space: nowrap;
+  display: block;
+}
+
+.create-record-form-group-name-abnormal>span,
+.create-record-form-group-name-abnormal .create-record-form-field-name-abnormal,
+.create-record-form-group-lastName-abnormal>span,
+.create-record-form-group-lastName-abnormal .create-record-form-field-lastName-abnormal,
+.create-record-form-group-age-abnormal>span,
+.create-record-form-group-age-abnormal .create-record-form-field-age-abnormal,
+.create-record-form-group-mobileNo-abnormal>span,
+.create-record-form-group-mobileNo-abnormal .create-record-form-field-mobileNo-abnormal,
+.create-record-form-group-occupation-abnormal>span,
+.create-record-form-group-occupation-abnormal .create-record-form-field-occupation-abnormal,
+.create-record-form-group-uhid-abnormal>span,
+.create-record-form-group-uhid-abnormal .create-record-form-field-uhid-abnormal,
+.create-record-form-group-bloodGroup-abnormal>span,
+.create-record-form-group-bloodGroup-abnormal .create-record-form-field-bloodGroup-abnormal,
+.create-record-form-group-height-abnormal>span,
+.create-record-form-group-height-abnormal .create-record-form-field-height-abnormal,
+.create-record-form-group-weight-abnormal>span,
+.create-record-form-group-weight-abnormal .create-record-form-field-weight-abnormal,
+.create-record-form-group-address-abnormal>span,
+.create-record-form-group-address-abnormal .create-record-form-field-address-abnormal,
+.create-record-form-group-gender-abnormal>span,
+.create-record-form-group-gender-abnormal .create-record-form-field-gender-abnormal {
+  white-space: nowrap;
+  display: block;
+}
+
+.create-record-form-group-name>span:not(:first-child):not(:last-child),
+.create-record-form-group-name .create-record-form-field-name:not(:first-child):not(:last-child),
+.create-record-form-group-lastName>span:not(:first-child):not(:last-child),
+.create-record-form-group-lastName .create-record-form-field-lastName:not(:first-child):not(:last-child),
+.create-record-form-group-age>span:not(:first-child):not(:last-child),
+.create-record-form-group-age .create-record-form-field-age:not(:first-child):not(:last-child),
+.create-record-form-group-mobileNo>span:not(:first-child):not(:last-child),
+.create-record-form-group-mobileNo .create-record-form-field-mobileNo:not(:first-child):not(:last-child),
+.create-record-form-group-occupation>span:not(:first-child):not(:last-child),
+.create-record-form-group-occupation .create-record-form-field-occupation:not(:first-child):not(:last-child),
+.create-record-form-group-uhid>span:not(:first-child):not(:last-child),
+.create-record-form-group-uhid .create-record-form-field-uhid:not(:first-child):not(:last-child),
+.create-record-form-group-bloodGroup>span:not(:first-child):not(:last-child),
+.create-record-form-group-bloodGroup .create-record-form-field-bloodGroup:not(:first-child):not(:last-child),
+.create-record-form-group-height>span:not(:first-child):not(:last-child),
+.create-record-form-group-height .create-record-form-field-height:not(:first-child):not(:last-child),
+.create-record-form-group-weight>span:not(:first-child):not(:last-child),
+.create-record-form-group-weight .create-record-form-field-weight:not(:first-child):not(:last-child),
+.create-record-form-group-address>span:not(:first-child):not(:last-child),
+.create-record-form-group-address .create-record-form-field-address:not(:first-child):not(:last-child),
+.create-record-form-group-gender>span:not(:first-child):not(:last-child),
+.create-record-form-group-gender .create-record-form-field-gender:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.create-record-form-group-name-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-name-abnormal .create-record-form-field-name-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-lastName-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-lastName-abnormal .create-record-form-field-lastName-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-age-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-age-abnormal .create-record-form-field-age-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-mobileNo-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-mobileNo-abnormal .create-record-form-field-mobileNo-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-occupation-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-occupation-abnormal .create-record-form-field-occupation-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-uhid-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-uhid-abnormal .create-record-form-field-uhid-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-bloodGroup-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-bloodGroup-abnormal .create-record-form-field-bloodGroup-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-height-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-height-abnormal .create-record-form-field-height-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-weight-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-weight-abnormal .create-record-form-field-weight-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-address-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-address-abnormal .create-record-form-field-address-abnormal:not(:first-child):not(:last-child),
+.create-record-form-group-gender-abnormal>span:not(:first-child):not(:last-child),
+.create-record-form-group-gender-abnormal .create-record-form-field-gender-abnormal:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.create-record-form-group-name>span:first-child,
+.create-record-form-group-name .create-record-form-field-name:first-child,
+.create-record-form-group-lastName>span:first-child,
+.create-record-form-group-lastName .create-record-form-field-lastName:first-child,
+.create-record-form-group-age>span:first-child,
+.create-record-form-group-age .create-record-form-field-age:first-child,
+.create-record-form-group-mobileNo>span:first-child,
+.create-record-form-group-mobileNo .create-record-form-field-mobileNo:first-child,
+.create-record-form-group-occupation>span:first-child,
+.create-record-form-group-occupation .create-record-form-field-occupation:first-child,
+.create-record-form-group-uhid>span:first-child,
+.create-record-form-group-uhid .create-record-form-field-uhid:first-child,
+.create-record-form-group-bloodGroup>span:first-child,
+.create-record-form-group-bloodGroup .create-record-form-field-bloodGroup:first-child,
+.create-record-form-group-height>span:first-child,
+.create-record-form-group-height .create-record-form-field-height:first-child,
+.create-record-form-group-weight>span:first-child,
+.create-record-form-group-weight .create-record-form-field-weight:first-child,
+.create-record-form-group-address>span:first-child,
+.create-record-form-group-address .create-record-form-field-address:first-child,
+.create-record-form-group-gender>span:first-child,
+.create-record-form-group-gender .create-record-form-field-gender:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.create-record-form-group-name-abnormal>span:first-child,
+.create-record-form-group-name-abnormal .create-record-form-field-name-abnormal:first-child,
+.create-record-form-group-lastName-abnormal>span:first-child,
+.create-record-form-group-lastName-abnormal .create-record-form-field-lastName-abnormal:first-child,
+.create-record-form-group-age-abnormal>span:first-child,
+.create-record-form-group-age-abnormal .create-record-form-field-age-abnormal:first-child,
+.create-record-form-group-mobileNo-abnormal>span:first-child,
+.create-record-form-group-mobileNo-abnormal .create-record-form-field-mobileNo-abnormal:first-child,
+.create-record-form-group-occupation-abnormal>span:first-child,
+.create-record-form-group-occupation-abnormal .create-record-form-field-occupation-abnormal:first-child,
+.create-record-form-group-uhid-abnormal>span:first-child,
+.create-record-form-group-uhid-abnormal .create-record-form-field-uhid-abnormal:first-child,
+.create-record-form-group-bloodGroup-abnormal>span:first-child,
+.create-record-form-group-bloodGroup-abnormal .create-record-form-field-bloodGroup-abnormal:first-child,
+.create-record-form-group-height-abnormal>span:first-child,
+.create-record-form-group-height-abnormal .create-record-form-field-height-abnormal:first-child,
+.create-record-form-group-weight-abnormal>span:first-child,
+.create-record-form-group-weight-abnormal .create-record-form-field-weight-abnormal:first-child,
+.create-record-form-group-address-abnormal>span:first-child,
+.create-record-form-group-address-abnormal .create-record-form-field-address-abnormal:first-child,
+.create-record-form-group-gender-abnormal>span:first-child,
+.create-record-form-group-gender-abnormal .create-record-form-field-gender-abnormal:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.create-record-form-group-name>span:last-child,
+.create-record-form-group-name .create-record-form-field-name:last-child,
+.create-record-form-group-lastName>span:last-child,
+.create-record-form-group-lastName .create-record-form-field-lastName:last-child,
+.create-record-form-group-age>span:last-child,
+.create-record-form-group-age .create-record-form-field-age:last-child,
+.create-record-form-group-mobileNo>span:last-child,
+.create-record-form-group-mobileNo .create-record-form-field-mobileNo:last-child,
+.create-record-form-group-occupation>span:last-child,
+.create-record-form-group-occupation .create-record-form-field-occupation:last-child,
+.create-record-form-group-uhid>span:last-child,
+.create-record-form-group-uhid .create-record-form-field-uhid:last-child,
+.create-record-form-group-bloodGroup>span:last-child,
+.create-record-form-group-bloodGroup .create-record-form-field-bloodGroup:last-child,
+.create-record-form-group-height>span:last-child,
+.create-record-form-group-height .create-record-form-field-height:last-child,
+.create-record-form-group-weight>span:last-child,
+.create-record-form-group-weight .create-record-form-field-weight:last-child,
+.create-record-form-group-address>span:last-child,
+.create-record-form-group-address .create-record-form-field-address:last-child,
+.create-record-form-group-gender>span:last-child,
+.create-record-form-group-gender .create-record-form-field-gender:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.create-record-form-group-name-abnormal>span:last-child,
+.create-record-form-group-name-abnormal .create-record-form-field-name-abnormal:last-child,
+.create-record-form-group-lastName-abnormal>span:last-child,
+.create-record-form-group-lastName-abnormal .create-record-form-field-lastName-abnormal:last-child,
+.create-record-form-group-age-abnormal>span:last-child,
+.create-record-form-group-age-abnormal .create-record-form-field-age-abnormal:last-child,
+.create-record-form-group-mobileNo-abnormal>span:last-child,
+.create-record-form-group-mobileNo-abnormal .create-record-form-field-mobileNo-abnormal:last-child,
+.create-record-form-group-occupation-abnormal>span:last-child,
+.create-record-form-group-occupation-abnormal .create-record-form-field-occupation-abnormal:last-child,
+.create-record-form-group-uhid-abnormal>span:last-child,
+.create-record-form-group-uhid-abnormal .create-record-form-field-uhid-abnormal:last-child,
+.create-record-form-group-bloodGroup-abnormal>span:last-child,
+.create-record-form-group-bloodGroup-abnormal .create-record-form-field-bloodGroup-abnormal:last-child,
+.create-record-form-group-height-abnormal>span:last-child,
+.create-record-form-group-height-abnormal .create-record-form-field-height-abnormal:last-child,
+.create-record-form-group-weight-abnormal>span:last-child,
+.create-record-form-group-weight-abnormal .create-record-form-field-weight-abnormal:last-child,
+.create-record-form-group-address-abnormal>span:last-child,
+.create-record-form-group-address-abnormal .create-record-form-field-address-abnormal:last-child,
+.create-record-form-group-gender-abnormal>span:last-child,
+.create-record-form-group-gender-abnormal .create-record-form-field-gender-abnormal:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.create-record-form-group-name>span:not(:first-child),
+.create-record-form-group-lastName>span:not(:first-child),
+.create-record-form-group-age>span:not(:first-child),
+.create-record-form-group-mobileNo>span:not(:first-child),
+.create-record-form-group-occupation>span:not(:first-child),
+.create-record-form-group-uhid>span:not(:first-child),
+.create-record-form-group-bloodGroup>span:not(:first-child),
+.create-record-form-group-height>span:not(:first-child),
+.create-record-form-group-weight>span:not(:first-child),
+.create-record-form-group-address>span:not(:first-child),
+.create-record-form-group-gender>span:not(:first-child) {
+  margin-left: -1px;
+}
+
+.create-record-form-group-name-abnormal>span:not(:first-child),
+.create-record-form-group-lastName-abnormal>span:not(:first-child),
+.create-record-form-group-age-abnormal>span:not(:first-child),
+.create-record-form-group-mobileNo-abnormal>span:not(:first-child),
+.create-record-form-group-occupation-abnormal>span:not(:first-child),
+.create-record-form-group-uhid-abnormal>span:not(:first-child),
+.create-record-form-group-bloodGroup-abnormal>span:not(:first-child),
+.create-record-form-group-height-abnormal>span:not(:first-child),
+.create-record-form-group-weight-abnormal>span:not(:first-child),
+.create-record-form-group-address-abnormal>span:not(:first-child),
+.create-record-form-group-gender-abnormal>span:not(:first-child) {
+  margin-left: -1px;
+}
+
+.create-record-form-group-name .create-record-form-field-name,
+.create-record-form-group-lastName .create-record-form-field-lastName,
+.create-record-form-group-age .create-record-form-field-age,
+.create-record-form-group-mobileNo .create-record-form-field-mobileNo,
+.create-record-form-group-occupation .create-record-form-field-occupation,
+.create-record-form-group-uhid .create-record-form-field-uhid,
+.create-record-form-group-bloodGroup .create-record-form-field-bloodGroup,
+.create-record-form-group-height .create-record-form-field-height,
+.create-record-form-group-weight .create-record-form-field-weight,
+.create-record-form-group-address .create-record-form-field-address,
+.create-record-form-group-gender .create-record-form-field-gender {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.create-record-form-group-name-abnormal .create-record-form-field-name-abnormal,
+.create-record-form-group-lastName-abnormal .create-record-form-field-lastName-abnormal,
+.create-record-form-group-age-abnormal .create-record-form-field-age-abnormal,
+.create-record-form-group-mobileNo-abnormal .create-record-form-field-mobileNo-abnormal,
+.create-record-form-group-occupation-abnormal .create-record-form-field-occupation-abnormal,
+.create-record-form-group-uhid-abnormal .create-record-form-field-uhid-abnormal,
+.create-record-form-group-bloodGroup-abnormal .create-record-form-field-bloodGroup-abnormal,
+.create-record-form-group-height-abnormal .create-record-form-field-height-abnormal,
+.create-record-form-group-weight-abnormal .create-record-form-field-weight-abnormal,
+.create-record-form-group-address-abnormal .create-record-form-field-address-abnormal,
+.create-record-form-group-gender-abnormal .create-record-form-field-gender-abnormal {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.create-record-form-group-name>span,
+.create-record-form-group-lastName>span,
+.create-record-form-group-age>span,
+.create-record-form-group-mobileNo>span,
+.create-record-form-group-occupation>span,
+.create-record-form-group-uhid>span,
+.create-record-form-group-bloodGroup>span,
+.create-record-form-group-height>span,
+.create-record-form-group-weight>span,
+.create-record-form-group-address>span,
+.create-record-form-group-gender>span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size:clamp(12px, calc(0.6rem + 0.5vw),1.5rem);
+  line-height: 25px;
+  color: #909ab1;
+  background: var(--group-background);
+  border: 1px solid var(--group-border);
+  transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.create-record-form-group-name-abnormal>span,
+.create-record-form-group-lastName-abnormal>span,
+.create-record-form-group-age-abnormal>span,
+.create-record-form-group-mobileNo-abnormal>span,
+.create-record-form-group-occupation-abnormal>span,
+.create-record-form-group-uhid-abnormal>span,
+.create-record-form-group-bloodGroup-abnormal>span,
+.create-record-form-group-height-abnormal>span,
+.create-record-form-group-weight-abnormal>span,
+.create-record-form-group-address-abnormal>span,
+.create-record-form-group-gender-abnormal>span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size:clamp(12px, calc(0.6rem + 0.5vw),1.5rem);
+  line-height: 25px;
+  color: white;
+  background: rgb(237, 110, 110);
+  border: 1px solid red;
+  transition: background .3s ease, border .3s ease, color .3s ease;
+}
+
+.create-record-form-group-name:focus-within>span,
+.create-record-form-group-lastName:focus-within>span,
+.create-record-form-group-age:focus-within>span,
+.create-record-form-group-mobileNo:focus-within>span,
+.create-record-form-group-occupation:focus-within>span,
+.create-record-form-group-uhid:focus-within>span,
+.create-record-form-group-bloodGroup:focus-within>span,
+.create-record-form-group-height:focus-within>span,
+.create-record-form-group-weight:focus-within>span,
+.create-record-form-group-address:focus-within>span,
+.create-record-form-group-gender:focus-within>span {
+  color: var(--group-color-focus);
+  background: #007bff;
+  border-color: var(--group-border-focus);
+}
+
+.create-record-form-group-name-abnormal:focus-within>span,
+.create-record-form-group-lastName-abnormal:focus-within>span,
+.create-record-form-group-age-abnormal:focus-within>span,
+.create-record-form-group-mobileNo-abnormal:focus-within>span,
+.create-record-form-group-occupation-abnormal:focus-within>span,
+.create-record-form-group-uhid-abnormal:focus-within>span,
+.create-record-form-group-bloodGroup-abnormal:focus-within>span,
+.create-record-form-group-height-abnormal:focus-within>span,
+.create-record-form-group-weight-abnormal:focus-within>span,
+.create-record-form-group-address-abnormal:focus-within>span,
+.create-record-form-group-gender-abnormal:focus-within>span {
+  color: var(--group-color-focus);
+  background: #007bff;
+  border-color: var(--group-border-focus);
+
+}
+
+.create-record-form-field-name,
+.create-record-form-field-lastName,
+.create-record-form-field-age,
+.create-record-form-field-mobileNo,
+.create-record-form-field-occupation,
+.create-record-form-field-uhid,
+.create-record-form-field-bloodGroup,
+.create-record-form-field-height,
+.create-record-form-field-weight,
+.create-record-form-field-address,
+.create-record-form-field-gender {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  border-radius: 0px 8px 8px 0 ;
+  font-size:clamp(12px, calc(0.6rem + 0.5vw),1.5rem);
+  font-weight: 500;
+  font-family: inherit;
+  
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border .3s ease;
+}
+
+
+.create-record-form-field-name-abnormal,
+.create-record-form-field-lastName-abnormal,
+.create-record-form-field-age-abnormal,
+.create-record-form-field-mobileNo-abnormal,
+.create-record-form-field-occupation-abnormal,
+.create-record-form-field-uhid-abnormal,
+.create-record-form-field-bloodGroup-abnormal,
+.create-record-form-field-height-abnormal,
+.create-record-form-field-weight-abnormal,
+.create-record-form-field-address-abnormal,
+.create-record-form-field-gender-abnormal {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size:clamp(12px, calc(0.6rem + 0.5vw),1.5rem);
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border .3s ease;
+
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.create-record-submit-btn {
+  display: block;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+float:right;
+  padding:10px 20px;
+  font-size:calc(1rem + 0.5vw);
+  color: #eae9e9;
+  background-color: #074e99;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-record-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.create-record-na li {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+
+}
+
+.create-record-na .create-record-button-dropdown {
+  position: relative;
+  width: 100%;
+
+
+}
+
+.create-record-na .create-record-button-dropdown .create-record-dropdown-toggle {
+
+  background-color: white;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.create-record-na li a {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: var(--input-placeholder);
+
+
+
+  text-decoration: none;
+}
+
+.create-record-na li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 13px;
+  color: #999;
+  position: absolute;
+  right: 2%;
+  transition: 0.2s ease;
+}
+
+
+/* Add this CSS for dropdown menu */
+.create-record-dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  /* Ensure it appears on top of all other elements */
+  top: calc(115% + 5px);
+  /* Position below the dropdown toggle */
+  left: 0;
+  width: 100%;
+  display: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Display dropdown menu vertically */
+.create-record-dropdown-menu li {
+  display: block;
+  width: 100%;
+}
+
+/* Add hover effect to dropdown items */
+.create-record-dropdown-menu li a {
+  display: block;
+  padding: 10px;
+
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.create-record-dropdown-menu li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.in-patient-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: none;
+}
+.in-patient-wrapper .in-patient-box-wrap {
+  width: 70%;
+  height: 70%;
+  margin: calc((100% - 70%) / 2) calc((100% - 70%) / 2);
+  position: relative;
+  transform: rotate(-45deg);
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(135, 0, 0, 0.6);
+  background: linear-gradient(
+    to right,
+    #141562,
+    #486fbc,
+    #eab5a1,
+    #8dd6ff,
+    #4973c9,
+    #d07ca7,
+    #f4915e,
+    #f5919e,
+    #b46f89,
+    #141562,
+    #486fbc
+  );
+  background-position: 0% 50%;
+  background-size: 1000% 1000%;
+  visibility: hidden;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.one {
+  animation: moveGradient 15s infinite, oneMove 3.5s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.two {
+  animation: moveGradient 15s infinite, twoMove 3.5s 0.15s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.three {
+  animation: moveGradient 15s infinite, threeMove 3.5s 0.3s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.four {
+  animation: moveGradient 15s infinite, fourMove 3.5s 0.575s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.five {
+  animation: moveGradient 15s infinite, fiveMove 3.5s 0.725s infinite;
+}
+.in-patient-wrapper .in-patient-box-wrap .in-patient-box.six {
+  animation: moveGradient 15s infinite, sixMove 3.5s 0.875s infinite;
+}
+
+@keyframes moveGradient {
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes oneMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes twoMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes threeMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(0% 70% 70% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(35% 70% 35% 0 round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes fourMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes fiveMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+@keyframes sixMove {
+  0% {
+    visibility: visible;
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  14.2857% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  28.5714% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  42.8571% {
+    clip-path: inset(70% 0 0 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  57.1428% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  71.4285% {
+    clip-path: inset(35% 0% 35% 70% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  85.7142% {
+    clip-path: inset(35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  100% {
+    clip-path: inset(70% 35% 0% 35% round 5%);
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  }
+}
+
+.in-patient-load-wrapp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+}
+
+.in-patient-load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.in-patient-letter-holder {
+  font-family: "Poppins", sans-serif;
+  padding: 16px;
+  font-size: 1px;
+}
+
+.letter {
+  float: left;
+  font-size: 10px;
+  color: #777;
+}
+
+.in-patient-load-6 .letter {
+  background-image: linear-gradient(to right, #2c67f2, #62cff4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin-top: 35vh;
+  font-size: 30px;
+  animation-name: loadingF;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+.l-1 {
+  animation-delay: 0.48s;
+}
+.l-2 {
+  animation-delay: 0.6s;
+}
+.l-3 {
+  animation-delay: 0.72s;
+}
+.l-4 {
+  animation-delay: 0.84s;
+}
+.l-5 {
+  animation-delay: 0.96s;
+}
+.l-6 {
+  animation-delay: 1.08s;
+}
+.l-7 {
+  animation-delay: 1.2s;
+}
+
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media(max-width:420px)
+{
+  .create-record-col{
+    min-width: 200px;
+  }
+}

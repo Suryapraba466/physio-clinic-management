@@ -1,0 +1,562 @@
+.prescription-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 60px 5% 20px;
+  display: flex;
+  flex-direction: column;
+    
+  gap: 40px;
+ 
+  min-height: 100vh;
+
+  
+}
+.img-wrap-plan{
+
+  display: flex;
+ 
+}
+
+.inhegiblation-treatment-row,
+.plantreatment-row {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+
+  background-color: white;
+  border-right: 5px solid #d1d7f8;
+  border-left: 5px solid #dfc3f3;
+  border-bottom: 5px solid #c5ccf8;
+  border-top: 5px solid #e9d2f8;
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+    overflow: auto;
+    padding: 0.5dvw 1%;
+   
+}
+.whole-wrap-treatment{
+  display: flex;
+ 
+  gap: 20px;
+}
+.whole-wrap-treatment>*{
+ 
+ display: flex;
+ 
+ align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.whole-wrap-treatment>*:last-child{
+  width: 50%;
+}
+
+
+.ex-img{
+ flex: 1;
+ width:47vw;
+ height: 72vh;
+}
+@media (max-width:1000px) {
+  .img-wrap-plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    
+  }
+  .whole-wrap-treatment>*:last-child{
+    width: 100%;
+  }
+  .whole-wrap-treatment{
+    flex-wrap: wrap;
+  }
+  .ex-img{
+    
+    flex: 1;
+    width:80vw;
+    height: auto;
+   }
+
+  
+}
+@media (max-width:500px) {
+  
+  .ex-img{
+    min-width: 80vw;
+  }
+  
+}
+.add-button {
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Aligning the "+" buttons */
+.button-wrap {
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.hospital-table th,
+.hospital-table td {
+ 
+  padding: 8px;
+  text-align: center;
+}
+
+.hospital-table tbody tr {
+  border-bottom: 1px solid rgb(221, 221, 221);
+ 
+}
+.hospital-table tbody tr:last-child {
+  border-bottom: none;
+ 
+}
+.hospital-table td {
+ border: none;
+ 
+}
+
+
+.hospital-table td input[type="text"] {
+ 
+  width: calc(100% - 10px); /* Adjusted width */
+  box-sizing: border-box;
+  min-width: 150px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-left: 2px solid rgb(255, 198, 243, 0.5);
+    border-top: 2px solid rgb(255, 198, 243, 0.5);
+    border-right: 2px solid rgb(225, 185, 255, 0.5);
+    border-bottom: 2px solid rgb(225, 185, 255, 0.5);
+    border-radius: 10px;
+}
+
+.hospital-table td input[type="radio"] {
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+.overlay-content {
+  background-color: #fff;
+
+ 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons button {
+  padding: 8px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#showOverlayButton {
+  position: relative;
+  float: right;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #45a049;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+
+.radio-after-or-before {
+  white-space: nowrap;
+}
+
+.action-buttons button:hover {
+  background-color: #45a049;
+}
+
+.plan-treatment-title,
+.inhegiblation-treatment-title {
+  text-align: left;
+  font-size: calc(1rem + 0.5vw);
+}
+
+/* Hide action buttons when printing */
+@media print {
+  .action-buttons {
+    display: none;
+  }
+
+  .hide-on-print {
+    display: none;
+  }
+
+  .overlay {
+    display: none; /* Hide overlay when printing */
+  }
+
+  .hospital-table th,
+  .hospital-table td {
+    border: 1px solid #000; /* Changed border color to black */
+    padding: 8px;
+    text-align: center;
+    color: #000; /* Text color changed to black */
+  }
+
+  .hospital-table th {
+    background-color: #00ccc9;
+    white-space: nowrap;
+    color: #000; /* Header text color changed to black */
+  }
+
+  .hospital-table td input[type="text"],
+  .hospital-table td input[type="radio"] {
+    /* Disable input interactions */
+  }
+
+  .hospital-table {
+    border-collapse:collapse ;
+    width: 100% !important; /* Fill the full width of the page */
+    padding: 0 10px; /* Add padding to the left and right sides */
+  }
+
+  .plantreatment-row,
+  .inhegiblation-treatment-row {
+    margin-top: 0; /* Remove margin top */
+    border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    border-right: 10px solid #eff1fd;
+    border-left: 10px solid #f7f1fb;
+    border-bottom: 10px solid #eff1fd;
+    border-top: 10px solid #f7f1fb;
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+    padding: 1% 2%;
+  }
+}
+
+.header-section-plan,
+.inhegiblation-treatment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.button-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+.action-buttons button {
+  padding: 8px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+  background-color: #45a049;
+}
+
+.mrng-nigt-flex-container-td:hover{
+  background-color: transparent;
+}
+
+
+
+.patient-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.patient-details>*{
+  flex: 1;
+  min-width: 200px;
+}
+
+.sub-patient-details {
+  align-items: center;
+
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+.sub-patient-details .update-record-patient {
+  font-size: calc(0.7rem + 0.5vw);
+  color: gray;
+}
+
+.patient-details label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.patient-details input[type="text"],
+.patient-details input[type="number"],
+.patient-details input[type="tel"],
+.patient-details input[type="email"],
+.patient-details select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  gap: 30px;
+}
+
+.patient-details select {
+  width: 20vh;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.patient-details input[type="text"]:focus,
+.patient-details input[type="number"]:focus,
+.patient-details input[type="tel"]:focus,
+.patient-details input[type="email"]:focus,
+.patient-details select:focus {
+  border-color: #00ccc9;
+}
+
+
+.prescription-cell.time-to-take{
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prescription-cell.radio-after-or-before{
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.overlay-content-custom .prescription-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.patient-information {
+  display: flex;
+  flex-direction: column;
+ 
+
+  width: 100%;
+ 
+}
+
+.overlay-content-custom .patient-details {
+  display: inline-flex;
+  gap: 50px;
+}
+
+
+.overlay-content-custom .prescription-tables{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  align-items: center;
+}
+
+.overlay-content-custom .inhegiblation-treatment-row .hospital-table{
+  width: 50%;
+}
+
+.overlay-content.overlay-content-custom {
+  margin-top:35vh;
+  width: 210mm;
+  /* A4 width */
+  min-height: 297mm;
+  height: 100%;
+  /* A4 height */
+  background-color: white;
+  /* Optional: Add border for visibility */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Optional: Add shadow */
+  /* Optional: Add padding */
+}
+
+.prescription-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.plantreatment-row .hospital-table td{
+    text-align: center;
+}
+
+.plantreatment-row .hospital-table,
+.inhegiblation-treatment-row .hospital-table{
+  width: 100%;
+  border-collapse: collapse;
+  
+  
+}
+
+.wrap-table{
+   position: relative;
+
+}
+
+.Prescription-main-container .toast {
+  position: absolute;
+  top: 2vh;
+  right: 36vw;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  z-index: 10000;
+}
+
+.mrng-nigt-flex-container-td{
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  width: 100%;
+}
+
+.inhegiblation-treatment-row .wrap-table
+{
+  position: relative;
+  overflow: auto;
+}
+.plantreatment-row .wrap-table{
+  position: relative;
+  overflow: auto;
+}
+
+.prescription-update-image{
+  position: relative;
+  top: 3vh;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.tooltip-icon{
+  position: relative;
+  left: 9px;
+  top: 3px;
+}
+
+.delete-tooltip-icon{
+  position: relative;
+  left: 0px;
+  top: 4px;
+}
+
+.delete-tooltip-icon img{
+height: 20px;
+width: 20px;
+}
+
+.delete-tooltip {
+  text-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.delete-tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover .delete-tooltip {
+  top: 45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.icon:hover span,
+.icon:hover .delete-tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.controls:hover .delete-tooltip,
+.controls:hover .delete-tooltip::before {
+  background: #4caf50;
+  color: #fff;
+}

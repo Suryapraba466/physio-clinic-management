@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Record</title>
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="create-record.css">
+</head>
+<body>
+
+<div class="create-record-container">
+    <form action="" class="create-record-form-container">
+        <h1 class="create-record-title">Create Record</h1>
+        <div class="create-record-row">
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Name&nbsp;&nbsp;&nbsp;</span>
+                    <input class="create-record-form-field" type="text" placeholder="Ram">
+                </div>
+            </div>
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Gender</span>
+                    
+                    <ul class="create-record-form-field create-record-na">
+                        <li class="create-record-button-dropdown">
+                            <a href="javascript:void(0)" class="create-record-dropdown-toggle" data-placeholder="Dropdown 1">
+                              Select Gender <span><i class="fa-solid fa-chevron-up"></i></span>
+                            </a>
+                            <ul class="create-record-dropdown-menu">
+                              <li><a href="#" class="create-record-dropdown-item">Male</a></li>
+                              <li><a href="#" class="create-record-dropdown-item">Female</a></li>
+                              <li><a href="#" class="create-record-dropdown-item">Other</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="create-record-row">
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Age</span>
+                    <input class="create-record-form-field" type="text" placeholder="21">
+                </div>
+            </div>
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Mobile No</span>
+                    <input class="create-record-form-field" type="text" placeholder="987654321">
+                </div>
+            </div>
+        </div>
+        <div class="create-record-row">
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Occupation</span>
+                    <input class="create-record-form-field" type="text" placeholder="Servicemen">
+                </div>
+            </div>
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>IP/UHID</span>
+                    <input class="create-record-form-field" type="text" placeholder="IP">
+                </div>
+            </div>
+        </div>
+        <div class="create-record-row">
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Complaint</span>
+                    <input class="create-record-form-field" type="text" placeholder="Neck Pain">
+                </div>
+            </div>
+            <div class="create-record-col">
+                <div class="create-record-form-group">
+                    <span>Address</span>
+                    <input class="create-record-form-field" type="text" placeholder="Salem">
+                </div>
+            </div>
+        </div>
+    
+        <input type="submit" value="Proceed to Create Record" class="create-record-submit-btn">
+
+    </form>
+    
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script>
+          $(document).ready(function () {
+              var dropdownDelay;
+  
+              $(".create-record-dropdown-toggle").click(function () {
+                  var $dropdownMenu = $(this).parents(".create-record-button-dropdown").children(".create-record-dropdown-menu");
+                  var isActive = $dropdownMenu.is(":hidden");
+  
+                  // Clear any previous delays
+                  clearTimeout(dropdownDelay);
+  
+                  // Hide all dropdowns and remove active class from all toggles
+                  $(".create-record-button-dropdown .create-record-dropdown-menu").hide();
+                  $(".create-record-button-dropdown .create-record-dropdown-toggle").removeClass("active");
+                  // Remove rotate class from all spans
+                  $(".create-record-dropdown-toggle span").removeClass("rotate");
+  
+                  if (isActive) {
+                      // Show the dropdown menu
+                      $dropdownMenu.show();
+                      // Add active class to the clicked toggle
+                      $(this).addClass("active");
+                      // Rotate the span
+                      $(this).find("span").addClass("rotate");
+                  }
+              });
+  
+              // Handle click on dropdown item
+              $(".create-record-dropdown-item").click(function() {
+                  var selectedValue = $(this).text(); // Get the text of the selected item
+                  var $dropdownToggle = $(this).closest('.create-record-button-dropdown').find('.create-record-dropdown-toggle');
+                  var placeholder = $dropdownToggle.data('placeholder'); // Get the placeholder text from data attribute
+                  $dropdownToggle.html(selectedValue + ' <span><i class="fa-solid fa-chevron-up"></i></span>'); // Update the dropdown toggle text
+                  $(this).closest('.create-record-dropdown-menu').hide(); // Hide the dropdown menu
+                  $(".create-record-dropdown-toggle").removeClass("active"); // Remove active class from all toggles
+                  $(".create-record-dropdown-toggle span").removeClass("rotate"); // Remove rotate class from all spans
+              });
+  
+              $(document).click(function (event) {
+                  // Hide dropdowns and remove active class if clicked outside of dropdown
+                  if (!$(event.target).closest('.create-record-button-dropdown').length) {
+                      $(".create-record-button-dropdown .create-record-dropdown-menu").hide();
+                      $(".create-record-button-dropdown .create-record-dropdown-toggle").removeClass("active");
+                      // Remove rotate class from all spans
+                      $(".create-record-dropdown-toggle span").removeClass("rotate");
+                  }
+              });
+          });
+      </script>
+</body>
+</html>
+
+
+

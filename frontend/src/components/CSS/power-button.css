@@ -1,0 +1,41 @@
+.power-button input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.power-button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.checkmark-pwr-btn {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 10em;
+    background-color: #6a6a6a; /* Default background color */
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px #00000061, 0px 0px 0px #3c3c3c4a;
+}
+
+.checkmark-pwr-btn img {
+    width: 20px;
+    height: 20px;
+
+    transition: 0.2s;
+}
+
+.checkmark-pwr-btn:active {
+    box-shadow: 2px 2px 3px #0000002c, 0px 0px 0px #ffffff;
+}
+
+.power-button input:checked ~ .checkmark-pwr-btn {
+    background-color: #00ff7b;
+    box-shadow: 2px 2px 3px #0000002c, 2px 2px 2px #ffffff;
+    /* Change to the color you want */
+}

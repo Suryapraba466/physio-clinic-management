@@ -1,0 +1,278 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.in-patient-billing-container {
+
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  height: 90vh;
+}
+
+
+.in-patient-billing-btn-search {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0px 8px 8px 0px;
+  width: max-content;
+  display: inline-block;
+  padding: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.in-patient-billing-btn-search:hover {
+  background-color: #0056b3;
+}
+
+.mobile-number {
+  max-width: 100%;
+  position: relative;
+}
+
+.form-in-patient-billing-container {
+  height: fit-content;
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(234, 232, 232);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.in-patient-billing-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.in-patient-billing-col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.in-patient-billing-title {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.in-patient-billing-inputBox {
+  margin-bottom: 5px;
+}
+
+
+.in-patient-billing-inputBox span {
+  color: rgb(52, 52, 52);
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.in-patient-billing-inputBox input[type="text"],
+.in-patient-billing-inputBox input[type="number"],
+.in-patient-billing-inputBox input[type="tel"],
+.in-patient-billing-inputBox input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  outline: none;  
+}
+
+.in-patient-billing-inputBox input[type="date"] {
+  color: rgb(160, 160, 160);
+  font-weight: 600;
+  
+}
+
+.in-patient-billing-inputBox input[type="text"]:focus,
+.in-patient-billing-inputBox input[type="number"]:focus,
+.in-patient-billing-inputBox input[type="tel"]:focus,
+.in-patient-billing-inputBox input[type="date"]:focus {
+  border-color: #007bff;
+}
+
+.in-patient-billing-submit-btn {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.in-patient-billing-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #999;
+  
+}
+
+.in-patient-billing-nav {
+  width: 100%;
+  display: block;
+  font: 16px Helvetica, Tahoma, serif;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #b4b4b4;
+  margin-top: 0.3rem;
+}
+
+.in-patient-billing-nav li {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+}
+
+.in-patient-billing-nav .button-in-patient-billing-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.in-patient-billing-nav .button-in-patient-billing-dropdown .in-patient-billing-dropdown-toggle {
+  border: 1px solid #ccc;
+  color: #464646;
+  border-radius: 8px;
+}
+
+.in-patient-billing-nav li a {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: #434343;;
+  background-color: #f9f9f9;
+  padding: 10px 10px;
+  border: 1px solid rgb(234, 232, 232);
+  text-decoration: none;
+}
+
+.in-patient-billing-nav li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 13px;
+  color: #484848;
+  position: absolute;
+  right: 2%;
+  transition: 0.2s ease;
+}
+
+.in-patient-billing-flex-in-billing {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.in-patient-billing-flex-in-billing .in-patient-billing-inputBox {
+  max-width: 50%;
+  width: 100%;
+}
+
+.in-patient-billing-nav li .in-patient-billing-dropdown-menu {
+  border-radius: 8px;
+  outline: 1px solid rgb(200, 200, 200);
+  max-height: 150px;
+  overflow-y: auto;
+  height: 35px;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #303030;
+}
+
+
+
+.in-patient-billing-dropdown-menu .dropdown-item {
+  border: none !important;
+  width: 100% !important;
+  display: block;
+  color: gray;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.in-patient-billing-dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.in-patient-billing-nav li .in-patient-billing-dropdown-menu .dropdown-item {
+  width: 150px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.in-patient-billing-total-amount-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.7rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 7.8rem;
+  padding: 1rem;
+}
+
+.in-patient-billing-total-amount-check h2 {
+  align-self: flex-start;
+  color: #007bff;
+}
+
+.in-patient-billing-total-amount-display {
+  align-self: center;
+  font-size: 50px;
+}
+
+.in-patient-billing-patient-details {
+  display: flex;
+  flex-direction: row;
+  float: left;
+
+
+}
+
+.in-patient-billing-patient-name,
+.in-patient-billing-patient-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  font-size:20px;
+
+}
